@@ -1,3 +1,3 @@
 #!/bin/bash
-if dnf check-update | grep kernel | wc -l >= 0 then
+if apt list --upgradeable | grep linux-headers | wc -l >= 0 then
 echo " listing kernel updates"
